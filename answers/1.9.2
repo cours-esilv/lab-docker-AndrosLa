@@ -1,4 +1,3 @@
 docker stop 2e991745c6e8
 docker rename 2e991745c6e8 newname
-docker start newname
-
+docker run -p 5000:5000 -e CURRENT_ENVIRONMENT=production --name newname -d androsla/repo:latest
